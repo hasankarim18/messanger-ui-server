@@ -1,0 +1,88 @@
+.chat_head {
+    height: 60px;
+    border-bottom: 0.5px solid rgb(202, 196, 196);
+    border-right: 0.5px solid rgb(202, 196, 196);
+    background-color: #fff;
+}
+
+.messages {
+    border-right: 0.5px solid rgb(202, 196, 196);
+    height: calc(85vh - 120px);
+    background-color: rgb(227, 240, 248);
+    overflow-y: scroll;
+}
+
+.send_message {
+    height: 60px;
+    background-color: #fff;
+    border-right: 0.5px solid rgb(202, 196, 196);
+    border-top: 0.5px solid rgb(202, 196, 196);
+}
+
+.single_message {
+    padding: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* width */
+.messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.messages::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(202, 196, 196);
+
+}
+
+/* Handle */
+.messages::-webkit-scrollbar-thumb {
+    background: #3C4D6D;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.messages::-webkit-scrollbar-thumb:hover {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    background: #555;
+}
+
+.paddingLeft {
+    padding-left: 200px;
+    display: inline-block;
+}
+
+.paddingRight {
+    display: inline-block;
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .paddingLeft {
+        padding-left: 100px;
+        display: inline-block;
+    }
+
+    .paddingRight {
+        display: inline-block;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .paddingLeft {
+        padding-left: 50px;
+        display: inline-block;
+    }
+
+    .paddingRight {
+        display: inline-block;
+        padding-right: 50px;
+    }
+}

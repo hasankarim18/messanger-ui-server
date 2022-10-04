@@ -1,0 +1,140 @@
+.navigation {
+    background-color: #3C4D6D;
+    ;
+    color: #fff;
+    padding: 10px;
+    height: 10vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.logout:hover {
+    color: rgb(224, 221, 215);
+}
+
+.sidebar {
+    box-sizing: border-box;
+    height: calc(85vh - 60px);
+    overflow: hi;
+
+}
+
+.sidebarHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 0.5px solid rgb(202, 196, 196);
+    border-bottom: 0.5px solid rgb(202, 196, 196);
+    border-right: 0.5px solid rgb(202, 196, 196);
+    height: 60px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.sidebarHead img {
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+    border-left: 0.5px solid rgb(202, 196, 196);
+}
+
+/* width */
+.sidebar ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.sidebar ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(202, 196, 196);
+
+}
+
+/* Handle */
+.sidebar ul::-webkit-scrollbar-thumb {
+    background: #3C4D6D;
+
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar ul::-webkit-scrollbar-thumb:hover {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    background: #555;
+}
+
+.sidebar ul li {
+
+    border-bottom: 0.5px solid rgb(202, 196, 196);
+    list-style-type: none;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: 0.5px solid transparent;
+}
+
+.sidebar ul li section {
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.sidebar ul li section:hover {
+    background-color: aliceblue;
+}
+
+
+
+/** blank **/
+
+.blank {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*** footer ***/
+
+
+.footer {
+    height: 5vh;
+    background-color: #3C4D6D;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .start_chat_text {
+        display: none;
+    }
+}
